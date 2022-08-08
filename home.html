@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKFLIX</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel='stylesheet' href='./style/slick.css'>
+    <link rel='stylesheet' href='./style/slick-theme.css'>
+    <!-- ###### -->
+</head>
+<!-- windows loding page -->
+<script>
+    function myFunctionlod() {
+        var preloader = document.getElementById("loading");
+        preloader.style.display = 'none';
+    };
+</script>
+<!-- #################### -->
+<style>
+    .content {
+        margin-top: 19px;
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+
+    .item {
+        height: 221px;
+        opacity: 0.4;
+        transition: .4s ease all;
+        transform: scale(0.9);
+        border-radius: 11px;
+        overflow: hidden;
+    }
+
+    .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .owl .item {
+        background: #4DC7A0;
+    }
+
+    .slick .item {
+        background: #3498db;
+    }
+
+    .active .item,
+    .slick-center {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .owl-controls {
+        position: absolute;
+        margin-top: 300px;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+</style>
+
+<body onload="myFunctionlod()">
+    <div id="loading">
+        <div class="centerd">
+            <p>Loading</p>
+            <div></div>
+        </div>
+    </div>
+    <!-- <div id="computer">
+        <p>haaa</p>
+    </div> -->
+    <div id="mobile">
+        <div class="top-navbar">
+            <div class="mav-sidebtn" onclick="openclos()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <img src="https://i.postimg.cc/d3BrpYPf/Nikflixlog.png" alt="NIKFLIX" class="logo">
+            <div class="searchbtn">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <section class="center-abi">
+            <div class="clossfull" onclick="openclos()"></div>
+            <div class="sidenav-slid">
+                <div class="top-s1">
+                    <div class="nightanddea">
+                        <button class="theme-toggle">
+                            <span class="mdi mdi-brightness-7 mdi-spin mdi-18px">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                    fill="#fff">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12.29 7c-.74 0-1.45.17-2.08.46 1.72.79 2.92 2.53 2.92 4.54s-1.2 3.75-2.92 4.54c.63.29 1.34.46 2.08.46 2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="close" onclick="openclos()">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <img src="https://i.postimg.cc/d1f9nvFj/NIKFLIX.png" alt="">
+            </div>
+        </section>
+        <div class="content">
+            <section class="slick">
+                <div class="slick-carousel">
+                    <div class="item"><img src="https://wallpaperaccess.com/full/2452442.jpg" alt=""></div>
+                    <div class="item"><img src="https://helios-i.mashable.com/imagery/articles/051i2SeLzyLL5TLmGHACULw/hero-image.fill.size_1248x702.v1611613580.jpg" alt=""></div>
+                    <div class="item"><img src="https://2.bp.blogspot.com/-b5BDuHz8vjE/X0nyjyNC0DI/AAAAAAAABzM/SHDvTF7YuWgB5pkV_wnMOXgB0CNIn-ligCNcBGAsYHQ/w919/fortnite-iron-man-marvel-uhdpaper.com-4K-7.2565-wp.thumbnail.jpg" alt=""></div>
+                    <div class="item"><img src="https://wallpapercave.com/wp/wp8354951.jpg" alt=""></div>
+                    <div class="item"><img src="https://wallpapercave.com/wp/wp4602328.jpg" alt=""></div>
+                    <div class="item"><img src="https://1.bp.blogspot.com/-FMQw_0o4kAc/X_az9071oNI/AAAAAAAAGYk/Xyd0BrhotBsdDg3OGqjdt7DPK7VY_3rmQCPcBGAsYHg/w919/loki-tv-series-uhdpaper.com-4K-8.2733-wp.thumbnail.jpg" alt=""></div>
+                    <div class="item"><img src="https://imageio.forbes.com/specials-images/imageserve/6103e736d8fc770ab9dff7be/0x0.jpg?format=jpg&width=1200" alt=""></div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+<!-- <script src="./js/jquery.js"></script> -->
+<script src="./js/main.js"></script>
+<script src="./js/slickjs.js"></script>
+<script src='./js/jquey.js'></script>
+<script src='./js/owljs.js'></script>
+<script src='./js/slick-main.js'></script>
+<script id="rendered-js">
+    $('.owl-carousel').owlCarousel({
+        stagePadding: 200,
+        loop: true,
+        items: 1,
+        lazyLoad: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true
+    });
+
+
+    $('.slick-carousel').slick({
+        centerMode: true,
+        slidesToShow: 3,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        edgeFriction: 0.05,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+    });
+//# sourceURL=pen.js
+</script>
+<!-- <script>
+    function devcfind() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // true for mobile device
+            document.getElementById('mobile').style.display = "block";
+        } else {
+            // false for not mobile device
+            document.getElementById('computer').style.display = "block";
+        }
+
+    }
+    devcfind();
+</script> -->
+<!-- no natwark -->
+<!-- <script>
+    window.addEventListener('online', updateStatus);
+    window.addEventListener('offline', updateStatus);
+
+    function updateStatus() {
+        var status = document.getElementById('status');
+        if (navigator.onLine) {
+            status.style.display = 'none';
+        } else {
+            status.style.display = 'flex';
+        }
+    };
+
+    updateStatus();
+</script> -->
+<!-- ############ -->
+<script>
+    function openclos() {
+        document.querySelector('.center-abi').classList.toggle('closeer');
+    }
+</script>
+<script>
+    (function App() {
+    let isDark = false;
+    if (localStorage.getItem("dark-mode")) {
+        isDark = true;
+        setDarkTheme();
+    }
+    const themeToggle = document.querySelector(".theme-toggle");
+    themeToggle.addEventListener("click", () => {
+        if (isDark) {
+            setLightTheme();
+            isDark = false;
+            ManageLocalStorage("DELETE");
+            return;
+        }
+        setDarkTheme();
+        ManageLocalStorage("ADD");
+        isDark = true;
+    });
+
+    function setLightTheme() {
+        document.body.classList.remove("dark");
+    }
+    function setDarkTheme() {
+        document.body.classList.add("dark");
+    }
+
+    function ManageLocalStorage(command) {
+        if (command === "DELETE") {
+            localStorage.removeItem("dark-mode");
+            return;
+        }
+        localStorage.setItem("dark-mode", true);
+    }
+})();
+</script>
+
+</html>
