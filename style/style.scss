@@ -30,6 +30,7 @@ body {
     --body: #ffffff;
     --text: #272727;
     --ovewcolor: #ffffff;
+    --cantsel: #eaeaea;
 }
 
 button {
@@ -48,6 +49,7 @@ body {
         --body: #272727;
         --text: #fff;
         --ovewcolor: #2f2f2f;
+        --cantsel: #141313;
     }
 }
 
@@ -119,7 +121,57 @@ body {
     }
 }
 
+#status {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 8rem;
+    height: 40px;
+    background: var(--text);
+    position: fixed;
+    bottom: 2rem;
+    left: 12px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px #00000036;
+    z-index: 999;
+
+    .wifi-logo {
+        width: 37px;
+        height: 37px;
+
+        svg {
+            width: 37px;
+            height: 37px;
+
+            .wiwi {
+                fill: var(--text);
+            }
+        }
+    }
+
+    p {
+        color: var(--body);
+        font-size: 15px;
+        font-weight: bolder;
+    }
+}
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
 #mobile {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
     .top-navbar {
         width: 100%;
         height: 34px;
@@ -202,7 +254,8 @@ body {
         display: none;
         justify-content: center;
         align-items: center;
-        .clossfull{
+
+        .clossfull {
             width: 100%;
             height: 100%;
             position: absolute;
@@ -264,6 +317,27 @@ body {
                 width: 5rem;
                 border-radius: 12px;
                 object-fit: cover;
+            }
+        }
+    }
+    .catrigey-movie-list{
+        width: auto;
+        height: auto;
+        overflow: auto;
+        .row{
+            width: 56rem;
+            height: auto;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: row;
+            padding-left: 12px;
+            .btn-catre{
+                width: auto;
+                background-color: var(--cantsel);
+                margin: 7px;
+                padding: 12px;
+                border-radius: 9px;
             }
         }
     }
