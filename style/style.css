@@ -414,6 +414,112 @@ a {
      object-fit: cover;
 }
 
+.download-area-movie {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.download-area-movie .cantentrr {
+  width: 23rem;
+  height: auto;
+  background: var(--ovewcolor);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 78px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-radius: 9px;
+  flex-direction: column;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.download-area-movie .cantentrr .thimble-movie {
+  width: auto;
+  height: 20rem;
+  position: relative;
+  top: -60px;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.2);
+}
+.download-area-movie .cantentrr .thimble-movie img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.download-area-movie .cantentrr h2 {
+  position: relative;
+  top: -43px;
+  font-size: 17px;
+  text-align: center;
+}
+.download-area-movie .cantentrr .movieinfo {
+  position: relative;
+  top: -27px;
+}
+.download-area-movie .cantentrr h5 {
+  position: relative;
+  top: -18px;
+  text-align: center;
+}
+.download-area-movie .cantentrr h5 b {
+  color: #f40062;
+}
+.download-area-movie .cantentrr .quicksty {
+  position: relative;
+  top: -9px;
+}
+.download-area-movie .cantentrr h6 {
+  text-align: center;
+  font-size: 14px;
+}
+.download-area-movie .cantentrr-screenshot {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.download-area-movie .cantentrr-screenshot img {
+  width: 38rem;
+  margin: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 9px;
+}
+.download-area-movie .download-arae-cant {
+  width: 23rem;
+  height: auto;
+  background: var(--ovewcolor);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-radius: 9px;
+  flex-direction: column;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.download-area-movie .download-arae-cant h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.download-area-movie .download-arae-cant a {
+  background: #f40062;
+  color: white;
+  padding: 12px;
+  margin: 4px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
 @media (max-width: 390px) {
   .sidenav-slid {
     width: 239px !important;
@@ -423,5 +529,10 @@ a {
 @media (max-width: 450px) {
   .item {
     height: 184px !important;
+  }
+}
+@media (max-width: 608px) {
+  .cantentrr-screenshot img {
+    width: 23rem !important;
   }
 }/*# sourceMappingURL=style.css.map */
