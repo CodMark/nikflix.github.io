@@ -24,6 +24,7 @@ body {
   --text: #272727;
   --ovewcolor: #ffffff;
   --cantsel: #eaeaea;
+  --cobump: rgba(200, 200, 200, 0.67);
 }
 
 button {
@@ -42,6 +43,7 @@ body.dark {
   --text: #fff;
   --ovewcolor: #2f2f2f;
   --cantsel: #141313;
+  --cobump: #141313a1;
 }
 
 .nightanddea {
@@ -156,16 +158,7 @@ a {
   color: var(--text);
 }
 
-#mobile {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-#mobile .top-navbar {
+.top-navbar {
   width: 100%;
   height: 34px;
   background: transparent;
@@ -175,48 +168,48 @@ a {
   padding-left: 12px;
   padding-right: 12px;
 }
-#mobile .top-navbar .mav-sidebtn {
+.top-navbar .mav-sidebtn {
   width: auto;
   height: auto;
   cursor: pointer;
 }
-#mobile .top-navbar .mav-sidebtn div:nth-child(1) {
+.top-navbar .mav-sidebtn div:nth-child(1) {
   width: 29px;
   height: 4px;
   background-color: var(--text);
   margin-bottom: 2px;
   border-radius: 22px;
 }
-#mobile .top-navbar .mav-sidebtn div:nth-child(2) {
+.top-navbar .mav-sidebtn div:nth-child(2) {
   width: 19px;
   height: 4px;
   background-color: var(--text);
   margin-bottom: 2px;
   border-radius: 22px;
 }
-#mobile .top-navbar .mav-sidebtn div:nth-child(3) {
+.top-navbar .mav-sidebtn div:nth-child(3) {
   width: 25px;
   height: 4px;
   background-color: var(--text);
   border-radius: 22px;
 }
-#mobile .top-navbar .logo {
+.top-navbar .logo {
   width: 5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#mobile .top-navbar .searchbtn {
+.top-navbar .searchbtn {
   width: 25px;
   height: 25px;
   position: relative;
 }
-#mobile .top-navbar .searchbtn div:nth-child(1) {
+.top-navbar .searchbtn div:nth-child(1) {
   width: 20px;
   height: 20px;
   border: 3.8px solid var(--text);
   border-radius: 50%;
 }
-#mobile .top-navbar .searchbtn div:nth-child(2) {
+.top-navbar .searchbtn div:nth-child(2) {
   width: 3.8px;
   height: 12px;
   background: var(--text);
@@ -226,7 +219,8 @@ a {
   left: 17px;
   top: 15px;
 }
-#mobile .center-abi {
+
+.center-abi {
   width: 100%;
   height: 100%;
   background: rgba(39, 39, 39, 0.3098039216);
@@ -240,14 +234,14 @@ a {
   justify-content: center;
   align-items: center;
 }
-#mobile .center-abi .clossfull {
+.center-abi .clossfull {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-#mobile .center-abi .sidenav-slid {
+.center-abi .sidenav-slid {
   width: 192px;
   height: 160px;
   background: var(--ovewcolor);
@@ -259,7 +253,7 @@ a {
   flex-direction: column;
   position: relative;
 }
-#mobile .center-abi .sidenav-slid .top-s1 {
+.center-abi .sidenav-slid .top-s1 {
   width: 100%;
   height: 2rem;
   display: flex;
@@ -269,13 +263,13 @@ a {
   position: absolute;
   top: 0;
 }
-#mobile .center-abi .sidenav-slid .top-s1 .close {
+.center-abi .sidenav-slid .top-s1 .close {
   width: 25px;
   height: 25px;
   position: relative;
   cursor: pointer;
 }
-#mobile .center-abi .sidenav-slid .top-s1 .close div:nth-child(1) {
+.center-abi .sidenav-slid .top-s1 .close div:nth-child(1) {
   width: 20px;
   height: 4px;
   background: var(--text);
@@ -284,7 +278,7 @@ a {
   top: 13px;
   border-radius: 22px;
 }
-#mobile .center-abi .sidenav-slid .top-s1 .close div:nth-child(2) {
+.center-abi .sidenav-slid .top-s1 .close div:nth-child(2) {
   width: 20px;
   height: 4px;
   background: var(--text);
@@ -293,18 +287,19 @@ a {
   top: 13px;
   border-radius: 22px;
 }
-#mobile .center-abi .sidenav-slid img {
+.center-abi .sidenav-slid img {
   width: 5rem;
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#mobile .catrigey-movie-list {
+
+.catrigey-movie-list {
   width: auto;
   height: auto;
   overflow: auto;
 }
-#mobile .catrigey-movie-list .row {
+.catrigey-movie-list .row {
   width: 56rem;
   height: auto;
   display: flex;
@@ -313,12 +308,110 @@ a {
   flex-direction: row;
   padding-left: 12px;
 }
-#mobile .catrigey-movie-list .row .btn-catre {
+.catrigey-movie-list .row .btn-catre {
   width: auto;
-  background-color: var(--cantsel);
   margin: 7px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.catrigey-movie-list .row .btn-catre a {
   padding: 12px;
+  background-color: var(--cantsel);
   border-radius: 9px;
+  z-index: 1;
+}
+.catrigey-movie-list .row .btn-catre span {
+  position: absolute;
+  top: -7px;
+  background: var(--cobump);
+  width: 85%;
+  height: 24px;
+  border-radius: 9px;
+}
+
+.recent-upload {
+  width: 100%;
+  height: auto;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.recent-upload .top-recent-btn {
+  width: 100%;
+  height: 27px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+  align-items: center;
+}
+.recent-upload .top-recent-btn p {
+  position: relative;
+  padding-left: 9px;
+}
+.recent-upload .top-recent-btn p::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: #f40062;
+  position: absolute;
+  left: 0;
+  border-radius: 22px;
+}
+.recent-upload .top-recent-btn a {
+  width: 31px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recent-upload .top-recent-btn a div {
+  width: 16px;
+  height: 4px;
+  border-radius: 22px;
+  background: var(--text);
+}
+.recent-upload .top-recent-btn a div:nth-child(1) {
+  transform: rotate(34deg);
+  margin-left: 11px;
+}
+.recent-upload .top-recent-btn a div:nth-child(2) {
+  width: 20px;
+  margin-left: 2px;
+}
+.recent-upload .top-recent-btn a div:nth-child(3) {
+  transform: rotate(-34deg);
+  margin-left: 11px;
+}
+.recent-upload .movie-recent-upload {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin-top: 9px;
+}
+.recent-upload .movie-recent-upload .scroll-itme {
+  width: 1354px;
+  height: 18rem;
+  display: flex;
+  justify-content: start;
+  padding-left: 12px;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.recent-upload .movie-recent-upload .scroll-itme .cantent-movie {
+  width: 176px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 9px;
+  margin: 6px;
+}
+.recent-upload .movie-recent-upload .scroll-itme .cantent-movie a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 390px) {
