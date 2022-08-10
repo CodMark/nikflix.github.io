@@ -537,7 +537,8 @@ a {
             border-radius: 9px;
         }
     }
-    .download-arae-cant{
+
+    .download-arae-cant {
         width: 23rem;
         height: auto;
         background: var(--ovewcolor);
@@ -550,17 +551,56 @@ a {
         flex-direction: column;
         padding: 12px;
         margin-bottom: 12px;
-        h2{
+
+        h2 {
             text-align: center;
             margin-bottom: 8px;
         }
-        a{
+
+        a {
             background: #f40062;
             color: white;
             padding: 12px;
             margin: 4px;
             border-radius: 9px;
             font-weight: bold;
+        }
+    }
+}
+
+.Recent-file-page-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 13px;
+
+    .movie-area-downloadimg {
+        margin-top: 12px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .movie-img {
+            width: 176px;
+            height: 100%;
+            overflow: hidden;
+            margin: 6px;
+            
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 9px;
+                }
+            }
         }
     }
 }
@@ -580,8 +620,8 @@ a {
 }
 
 @media (max-width: 608px) {
-    .cantentrr-screenshot{
-        img{
+    .cantentrr-screenshot {
+        img {
             width: 23rem !important;
         }
     }
