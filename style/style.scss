@@ -30,6 +30,8 @@ body {
     --ovewcolor: #ffffff;
     --cantsel: #eaeaea;
     --cobump: rgba(200, 200, 200, 0.67);
+    --searchback: #27272733;
+    --searchcolor: #000;
 }
 
 button {
@@ -50,6 +52,8 @@ body {
         --ovewcolor: #2f2f2f;
         --cantsel: #141313;
         --cobump: #141313a1;
+        --searchback: #ffffff33;
+        --searchcolor: #fff;
     }
 }
 
@@ -243,6 +247,15 @@ a {
             position: absolute;
             left: 17px;
             top: 15px;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+
+            path {
+                fill: var(--text);
+            }
         }
     }
 }
@@ -744,6 +757,120 @@ a {
                 margin: 4px;
                 border-radius: 9px;
                 font-weight: bold;
+            }
+        }
+    }
+}
+
+.search-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18px;
+
+    .searchinput {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .searchbtn {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: 4px;
+            margin-top: 6px;
+            margin-left: 3px;
+
+            div:nth-child(1) {
+                width: 16px;
+                height: 16px;
+                border: 3.8px solid var(--text);
+                border-radius: 50%;
+            }
+
+            div:nth-child(2) {
+                width: 3.8px;
+                height: 11px;
+                background: var(--text);
+                border-radius: 22px;
+                transform: rotate(-44deg);
+                position: absolute;
+                left: 14px;
+                top: 11px;
+            }
+        }
+
+        #searchbar {
+            width: 23rem;
+            height: 35px;
+            outline: none;
+            border: none;
+            border-radius: 7px;
+            background: var(--searchback);
+            color: var(--searchcolor);
+            padding-left: 32px;
+            padding-right: 12px;
+            font-size: 16px;
+        }
+    }
+}
+
+#no-searchimg {
+    width: 100%;
+    height: 25rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 18rem;
+    }
+}
+
+.search-reselt-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 12px;
+
+    .resel-seachh {
+        width: 192px;
+        height: 292px;
+        overflow: hidden;
+        position: relative;
+        margin: 12px;
+
+        .search-dn {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 9px;
+        }
+
+        .reting {
+            position: absolute;
+            bottom: 2px;
+            background: rgb(244, 0, 98);
+            padding: 4px;
+            right: 2px;
+            border-radius: 7px;
+
+            p {
+                color: #fff;
+                font-weight: bolder;
             }
         }
     }

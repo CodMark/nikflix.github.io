@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent upload
-    </title>
-    <link rel="stylesheet" href="../style/style.css">
+    <title>Search in NIKFLIX</title>
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="logo" href="./img/NIKFLIX.png">
-    <link rel="shortcut icon" href="../img/NIKFLIX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/NIKFLIX.png" type="image/x-icon">
 </head>
 <!-- windows loding page -->
 <script>
@@ -35,9 +34,18 @@
             <div></div>
         </div>
         <img src="https://i.postimg.cc/d3BrpYPf/Nikflixlog.png" alt="NIKFLIX" class="logo">
-        <a href="../searchpage.html" class="searchbtn">
-            <div></div>
-            <div></div>
+        <a href="./home.html" class="searchbtn">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512"
+                height="512">
+                <g>
+                    <path
+                        d="M23.253,23.407a1.5,1.5,0,0,0-1.506-2.595,1.706,1.706,0,0,1-1.806-.149,3.352,3.352,0,0,0-3.882,0,1.854,1.854,0,0,1-2.118,0,3.352,3.352,0,0,0-3.882,0,1.854,1.854,0,0,1-2.118,0,3.352,3.352,0,0,0-3.882,0,1.709,1.709,0,0,1-1.806.149A1.5,1.5,0,0,0,.747,23.407a4.759,4.759,0,0,0,5.05-.3.336.336,0,0,1,.406,0,4.914,4.914,0,0,0,5.594,0,.336.336,0,0,1,.406,0,4.914,4.914,0,0,0,5.594,0,.336.336,0,0,1,.406,0,4.87,4.87,0,0,0,2.8.9A4.491,4.491,0,0,0,23.253,23.407Z" />
+                    <path
+                        d="M3,16.5V11.167a.5.5,0,0,1,.146-.352l7.086-7.086a2.5,2.5,0,0,1,3.536,0h0l7.086,7.086a.5.5,0,0,1,.146.352v5.325a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.169a3.473,3.473,0,0,0-1.025-2.475L15.889,1.608a5.507,5.507,0,0,0-7.778,0L1.025,8.694A3.473,3.473,0,0,0,0,11.169V16.5A1.5,1.5,0,0,0,1.5,18h0A1.5,1.5,0,0,0,3,16.5Z" />
+                    <path d="M12.182,14h-.364A3.818,3.818,0,0,0,8,17.818V18h8v-.182A3.818,3.818,0,0,0,12.182,14Z" />
+                </g>
+            </svg>
         </a>
     </div>
     <section class="center-abi">
@@ -67,46 +75,47 @@
         </div>
     </section>
 
-    <div class="Recent-file-page-area">
-        <h2>Recent Upload</h2>
-        <div class="movie-area-downloadimg">
-            <div class="movie-img">
-                <a href="../download/luck_movie.html">
-                    <img src="https://allmovieshub.info/wp-content/uploads/2022/08/Luck-dual-audio-download-480p-720p-1080p.jpg" alt="">
-                </a>
+    <div class="search-area">
+        <div class="searchinput">
+            <div class="searchbtn">
+                <div></div>
+                <div></div>
             </div>
-            <div class="movie-img">
-                <a href="#">
-                    <img src="https://allmovieshub.info/wp-content/uploads/2022/08/The-Bloody-Man-english-audio-480p-720p-1080p.jpg" alt="">
-                </a>
-            </div>
-            <div class="movie-img">
-                <a href="#">
-                    <img src="https://allmovieshub.info/wp-content/uploads/2022/03/The-Underground-War-movie-dual-audio-download-480p-720p-1080p.jpg" alt="">
-                </a>
-            </div>
-            <div class="movie-img">
-                <a href="#">
-                    <img src="https://allmovieshub.info/wp-content/uploads/2022/08/Lightyear-dual-audio-download-480p-720p-1080p.jpg" alt="">
-                </a>
-            </div>
-            <div class="movie-img">
-                <a href="#">
-                    <img src="https://allmovieshub.info/wp-content/uploads/2022/07/Thor-Love-and-Thunder-english-audio-download-480p-720p-1080p.jpg" alt="">
-                </a>
-            </div>
-            <div class="movie-img">
-                <a href="#">
-                    <img src="https://allmovieshub.info/wp-content/uploads/2021/11/Shang-Chi-and-The-Legend-Of-The-Ten-Rings-movie-dual-audio-download-480p-720p-1080p.jpg" alt="">
-                </a>
-            </div>
-            <div class="movie-img">
-                <a href="#">
-                    <img src="https://allmovieshub.info/wp-content/uploads/2019/02/Avengers-Endgame-movie-dual-audio-download-480p-720p-1080p.jpg" alt="">
-                </a>
-            </div>
+            <input type="text" name="fdg" id="searchbar" onkeyup="search_animal()" placeholder="Search..." aria-controls="datatable">
         </div>
     </div>
+    <div id="no-searchimg">
+        <img src="https://assets.interviewbit.com/packs/images/cover.9f999f.svg" alt="">
+    </div>
+
+    <div class="search-reselt-area animals">
+        <div class="resel-seachh animals">
+            <p class="search-dn">
+                Luck
+            </p>
+            <a href="./download/luck_movie.html">
+                <img src="https://allmovieshub.info/wp-content/uploads/2022/08/Luck-dual-audio-download-480p-720p-1080p.jpg"
+                    alt="">
+                    <div class="reting">
+                        <p>6.3/10</p>
+                    </div>
+            </a>
+        </div>
+        <div class="resel-seachh animals">
+            <p class="search-dn">
+                all of us are dead
+            </p>
+            <a href="./download/All Of Us Are Dead.html">
+                <img src="https://www.pinkvilla.com/imageresize/all_of_us_are_dead_main_1.jpg?width=752&format=webp&t=pvorg"
+                    alt="">
+                    <div class="reting">
+                        <p>7.5/10</p>
+                    </div>
+            </a>
+        </div>
+        
+    </div>
+
 
     <div id="status">
         <div class="wifi-logo">
@@ -137,7 +146,30 @@
         <p>no internet</p>
     </div>
 </body>
-<script src="../js/main.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    function search_animal() {
+        let input = document.getElementById('searchbar').value
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName('animals');
+
+        if (x => none) {
+            document.getElementById('no-searchimg').style.display = "flex";
+        } else {
+            document.getElementById('no-searchimg').style.display = "none";
+        }
+
+        for (i = 0; i < x.length; i++) {
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display = "none";
+            }
+            else {
+                x[i].style.display = "flex";
+                document.getElementById('no-searchimg').style.display = "none";
+            }
+        }
+    }
+</script>
 <!-- no natwark -->
 <script>
     window.addEventListener('online', updateStatus);
