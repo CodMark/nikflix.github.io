@@ -134,40 +134,50 @@ body {
 }
 
 #status {
-    display: none;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    padding-left: 2px;
-    padding-right: 2px;
-    width: 8rem;
-    height: 40px;
-    background: var(--text);
     position: fixed;
-    bottom: 2rem;
-    left: 12px;
-    border-radius: 7px;
-    box-shadow: 0px 0px 20px #00000036;
+    top: 0px;
+    left: 0;
     z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #0d0d0d47;
+    display: none;
+    justify-content: center;
+    align-items: center;
 
-    .wifi-logo {
-        width: 37px;
-        height: 37px;
+    .nonate {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 8rem;
+        height: 77px;
+        background: var(--text);
+        border-radius: 7px;
+        box-shadow: 0px 0px 20px #00000036;
+        animation: animations 2s infinite;
 
-        svg {
+        .wifi-logo {
             width: 37px;
             height: 37px;
 
-            .wiwi {
-                fill: var(--text);
+            svg {
+                width: 37px;
+                height: 37px;
+
+                .wiwi {
+                    fill: var(--text);
+                }
             }
         }
-    }
 
-    p {
-        color: var(--body);
-        font-size: 15px;
-        font-weight: bolder;
+        p {
+            color: var(--body);
+            font-size: 15px;
+            font-weight: bolder;
+        }
     }
 }
 
@@ -636,9 +646,10 @@ a {
 
         .movie-img {
             width: 176px;
-            height: 100%;
+            height: 264px;
             overflow: hidden;
             margin: 6px;
+            position: relative;
 
             a {
                 img {
@@ -646,6 +657,20 @@ a {
                     height: 100%;
                     object-fit: cover;
                     border-radius: 9px;
+                }
+
+                .reting {
+                    position: absolute;
+                    bottom: 6px;
+                    background: rgb(244, 0, 98);
+                    padding: 4px;
+                    right: 2px;
+                    border-radius: 7px;
+
+                    p {
+                        color: #fff;
+                        font-weight: bolder;
+                    }
                 }
             }
         }
@@ -843,11 +868,11 @@ a {
     margin-top: 12px;
 
     .resel-seachh {
-        width: 192px;
-        height: 292px;
+        width: 176px;
+        height: 268px;
         overflow: hidden;
         position: relative;
-        margin: 12px;
+        margin: 6px;
 
         .search-dn {
             display: none;
@@ -876,6 +901,63 @@ a {
     }
 }
 
+.page-numbers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    a,
+    div {
+        padding: 12px;
+        background: var(--searchback);
+        margin: 3px;
+        border-radius: 6px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .activnu{
+        border: 2px solid #f40062;
+        pointer-events: none;
+    }
+    .rto{
+        transform: rotate(-180deg);
+    }
+
+    .next {
+        padding: 3px;
+
+        svg {
+            width: 33px;
+            height: 33px;
+
+            path {
+                fill: var(--text);
+            }
+        }
+    }
+}
+
+@keyframes animations {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 #f5f5f5;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}
 
 @media (max-width: 390px) {
     .sidenav-slid {
