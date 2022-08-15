@@ -76,7 +76,11 @@ body.dark {
 
 .download-season-area-480p.showdow,
 .download-season-area-720p.showdow,
-.download-season-area-1080p.showdow {
+.download-season-area-1080p.showdow,
+.download-season2-area-480p.showdow,
+.download-season2-area-720p.showdow,
+.download-season1-area-480p.showdow,
+.download-season1-area-720p.showdow {
   display: flex !important;
 }
 
@@ -621,7 +625,11 @@ a {
 
 .download-season-area-480p,
 .download-season-area-720p,
-.download-season-area-1080p {
+.download-season-area-1080p,
+.download-season2-area-480p,
+.download-season2-area-720p,
+.download-season1-area-480p,
+.download-season1-area-720p {
   width: 100%;
   height: 100%;
   background: rgba(39, 39, 39, 0.3098039216);
@@ -637,7 +645,11 @@ a {
 }
 .download-season-area-480p .clossfull2,
 .download-season-area-720p .clossfull2,
-.download-season-area-1080p .clossfull2 {
+.download-season-area-1080p .clossfull2,
+.download-season2-area-480p .clossfull2,
+.download-season2-area-720p .clossfull2,
+.download-season1-area-480p .clossfull2,
+.download-season1-area-720p .clossfull2 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -646,7 +658,11 @@ a {
 }
 .download-season-area-480p .area-do,
 .download-season-area-720p .area-do,
-.download-season-area-1080p .area-do {
+.download-season-area-1080p .area-do,
+.download-season2-area-480p .area-do,
+.download-season2-area-720p .area-do,
+.download-season1-area-480p .area-do,
+.download-season1-area-720p .area-do {
   width: 19rem;
   height: auto;
   background: var(--ovewcolor);
@@ -660,7 +676,11 @@ a {
 }
 .download-season-area-480p .area-do .top-detal,
 .download-season-area-720p .area-do .top-detal,
-.download-season-area-1080p .area-do .top-detal {
+.download-season-area-1080p .area-do .top-detal,
+.download-season2-area-480p .area-do .top-detal,
+.download-season2-area-720p .area-do .top-detal,
+.download-season1-area-480p .area-do .top-detal,
+.download-season1-area-720p .area-do .top-detal {
   width: 100%;
   height: 2rem;
   display: flex;
@@ -670,7 +690,11 @@ a {
 }
 .download-season-area-480p .area-do .top-detal .name-mv,
 .download-season-area-720p .area-do .top-detal .name-mv,
-.download-season-area-1080p .area-do .top-detal .name-mv {
+.download-season-area-1080p .area-do .top-detal .name-mv,
+.download-season2-area-480p .area-do .top-detal .name-mv,
+.download-season2-area-720p .area-do .top-detal .name-mv,
+.download-season1-area-480p .area-do .top-detal .name-mv,
+.download-season1-area-720p .area-do .top-detal .name-mv {
   margin-top: 8px;
   margin-left: 25px;
   font-weight: bold;
@@ -678,18 +702,30 @@ a {
 }
 .download-season-area-480p .area-do .top-detal .name-mv b,
 .download-season-area-720p .area-do .top-detal .name-mv b,
-.download-season-area-1080p .area-do .top-detal .name-mv b {
+.download-season-area-1080p .area-do .top-detal .name-mv b,
+.download-season2-area-480p .area-do .top-detal .name-mv b,
+.download-season2-area-720p .area-do .top-detal .name-mv b,
+.download-season1-area-480p .area-do .top-detal .name-mv b,
+.download-season1-area-720p .area-do .top-detal .name-mv b {
   font-size: 13px;
 }
 .download-season-area-480p .area-do .top-detal .name-mv m,
 .download-season-area-720p .area-do .top-detal .name-mv m,
-.download-season-area-1080p .area-do .top-detal .name-mv m {
+.download-season-area-1080p .area-do .top-detal .name-mv m,
+.download-season2-area-480p .area-do .top-detal .name-mv m,
+.download-season2-area-720p .area-do .top-detal .name-mv m,
+.download-season1-area-480p .area-do .top-detal .name-mv m,
+.download-season1-area-720p .area-do .top-detal .name-mv m {
   color: #00b7ff;
   margin-left: 12px;
 }
 .download-season-area-480p .area-do .top-detal .close,
 .download-season-area-720p .area-do .top-detal .close,
-.download-season-area-1080p .area-do .top-detal .close {
+.download-season-area-1080p .area-do .top-detal .close,
+.download-season2-area-480p .area-do .top-detal .close,
+.download-season2-area-720p .area-do .top-detal .close,
+.download-season1-area-480p .area-do .top-detal .close,
+.download-season1-area-720p .area-do .top-detal .close {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -698,7 +734,11 @@ a {
 }
 .download-season-area-480p .area-do .top-detal .close div:nth-child(1),
 .download-season-area-720p .area-do .top-detal .close div:nth-child(1),
-.download-season-area-1080p .area-do .top-detal .close div:nth-child(1) {
+.download-season-area-1080p .area-do .top-detal .close div:nth-child(1),
+.download-season2-area-480p .area-do .top-detal .close div:nth-child(1),
+.download-season2-area-720p .area-do .top-detal .close div:nth-child(1),
+.download-season1-area-480p .area-do .top-detal .close div:nth-child(1),
+.download-season1-area-720p .area-do .top-detal .close div:nth-child(1) {
   width: 20px;
   height: 4px;
   background: var(--text);
@@ -709,7 +749,11 @@ a {
 }
 .download-season-area-480p .area-do .top-detal .close div:nth-child(2),
 .download-season-area-720p .area-do .top-detal .close div:nth-child(2),
-.download-season-area-1080p .area-do .top-detal .close div:nth-child(2) {
+.download-season-area-1080p .area-do .top-detal .close div:nth-child(2),
+.download-season2-area-480p .area-do .top-detal .close div:nth-child(2),
+.download-season2-area-720p .area-do .top-detal .close div:nth-child(2),
+.download-season1-area-480p .area-do .top-detal .close div:nth-child(2),
+.download-season1-area-720p .area-do .top-detal .close div:nth-child(2) {
   width: 20px;
   height: 4px;
   background: var(--text);
@@ -720,7 +764,11 @@ a {
 }
 .download-season-area-480p .area-do .dow-area,
 .download-season-area-720p .area-do .dow-area,
-.download-season-area-1080p .area-do .dow-area {
+.download-season-area-1080p .area-do .dow-area,
+.download-season2-area-480p .area-do .dow-area,
+.download-season2-area-720p .area-do .dow-area,
+.download-season1-area-480p .area-do .dow-area,
+.download-season1-area-720p .area-do .dow-area {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -731,7 +779,11 @@ a {
 }
 .download-season-area-480p .area-do .dow-area a,
 .download-season-area-720p .area-do .dow-area a,
-.download-season-area-1080p .area-do .dow-area a {
+.download-season-area-1080p .area-do .dow-area a,
+.download-season2-area-480p .area-do .dow-area a,
+.download-season2-area-720p .area-do .dow-area a,
+.download-season1-area-480p .area-do .dow-area a,
+.download-season1-area-720p .area-do .dow-area a {
   background: #4f4f4f;
   color: white;
   padding: 12px;

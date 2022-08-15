@@ -81,7 +81,11 @@ body {
 
 .download-season-area-480p.showdow,
 .download-season-area-720p.showdow,
-.download-season-area-1080p.showdow {
+.download-season-area-1080p.showdow,
+.download-season2-area-480p.showdow,
+.download-season2-area-720p.showdow,
+.download-season1-area-480p.showdow,
+.download-season1-area-720p.showdow {
     display: flex !important;
 }
 
@@ -679,7 +683,11 @@ a {
 
 .download-season-area-480p,
 .download-season-area-720p,
-.download-season-area-1080p {
+.download-season-area-1080p,
+.download-season2-area-480p,
+.download-season2-area-720p,
+.download-season1-area-480p,
+.download-season1-area-720p {
     width: 100%;
     height: 100%;
     background: #2727274f;
