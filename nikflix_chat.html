@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKFLIX Chat</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="logo" href="./img/NIKFLIX.png">
+    <link rel="shortcut icon" href="./img/NIKFLIX.png" type="image/x-icon">
+    <!-- ###### -->
+</head>
+<!-- windows loding page -->
+<script>
+    function myFunctionlod() {
+        var preloader = document.getElementById("loading");
+        preloader.style.display = 'none';
+    };
+</script>
+<!-- #################### -->
+
+<body onload="myFunctionlod()">
+    <div id="loading">
+        <div class="centerd">
+            <p>Loading</p>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="top-navbar">
+        <div class="mav-sidebtn" onclick="openclos()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img src="https://i.postimg.cc/d3BrpYPf/Nikflixlog.png" alt="NIKFLIX" class="logo">
+        <a href="./searchpage.html" class="searchbtn">
+            <div></div>
+            <div></div>
+        </a>
+    </div>
+    <section class="center-abi">
+        <div class="clossfull" onclick="openclos()"></div>
+        <div class="sidenav-slid">
+            <div class="top-s1">
+                <div class="nightanddea">
+                    <button class="theme-toggle">
+                        <span class="mdi mdi-brightness-7 mdi-spin mdi-18px">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                fill="#fff">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12.29 7c-.74 0-1.45.17-2.08.46 1.72.79 2.92 2.53 2.92 4.54s-1.2 3.75-2.92 4.54c.63.29 1.34.46 2.08.46 2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="close" onclick="openclos()">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <img src="https://i.postimg.cc/d1f9nvFj/NIKFLIX.png" alt="">
+            <p style="margin-top: 6px;">v 1.0</p>
+            <p style="font-size: 13.4px; margin-top: 3px;">Made with ❤️ in India </p>
+        </div>
+    </section>
+    <section class="center-nav">
+        <div class="bottom-navbar">
+            <a href="./home.html">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512"
+                    height="512">
+                    <g>
+                        <path
+                            d="M23.253,23.407a1.5,1.5,0,0,0-1.506-2.595,1.706,1.706,0,0,1-1.806-.149,3.352,3.352,0,0,0-3.882,0,1.854,1.854,0,0,1-2.118,0,3.352,3.352,0,0,0-3.882,0,1.854,1.854,0,0,1-2.118,0,3.352,3.352,0,0,0-3.882,0,1.709,1.709,0,0,1-1.806.149A1.5,1.5,0,0,0,.747,23.407a4.759,4.759,0,0,0,5.05-.3.336.336,0,0,1,.406,0,4.914,4.914,0,0,0,5.594,0,.336.336,0,0,1,.406,0,4.914,4.914,0,0,0,5.594,0,.336.336,0,0,1,.406,0,4.87,4.87,0,0,0,2.8.9A4.491,4.491,0,0,0,23.253,23.407Z" />
+                        <path
+                            d="M3,16.5V11.167a.5.5,0,0,1,.146-.352l7.086-7.086a2.5,2.5,0,0,1,3.536,0h0l7.086,7.086a.5.5,0,0,1,.146.352v5.325a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.169a3.473,3.473,0,0,0-1.025-2.475L15.889,1.608a5.507,5.507,0,0,0-7.778,0L1.025,8.694A3.473,3.473,0,0,0,0,11.169V16.5A1.5,1.5,0,0,0,1.5,18h0A1.5,1.5,0,0,0,3,16.5Z" />
+                        <path d="M12.182,14h-.364A3.818,3.818,0,0,0,8,17.818V18h8v-.182A3.818,3.818,0,0,0,12.182,14Z" />
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="active">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+                    <path
+                        d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+                    <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+                    <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+                    <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/62feff3454f06e12d88f7e3d/1gaq19qns';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+    <section id="status">
+        <div class="nonate">
+            <div class="wifi-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 90 90"
+                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                    <g>
+                        <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd"
+                            d="m84.646 44.906c0 10.527-4.176 20.62-11.619 28.057-7.443 7.443-17.531 11.62-28.057 11.62-21.913 0-39.678-17.76-39.678-39.677 0-21.911 17.766-39.678 39.678-39.678 10.525 0 20.613 4.183 28.057 11.625 7.444 7.439 11.619 17.533 11.619 28.053z"
+                            fill="#f9f9f9" fill-rule="evenodd" data-original="#f9f9f9" class=""></path>
+                        <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd"
+                            d="m44.971 8.188c-20.245 0-36.725 16.475-36.725 36.719 0 20.245 16.48 36.724 36.725 36.724 6.5 0 12.609-1.708 17.91-4.687l-4.453-4.448c-4.063 1.979-8.619 3.114-13.457 3.114-16.995 0-30.704-13.709-30.704-30.704 0-7.057 2.371-13.547 6.354-18.724l5.725 5.719c1.834-1.072 3.788-1.963 5.834-2.676l-7.434-7.433c5.397-4.724 12.463-7.588 20.225-7.588 16.988 0 30.707 13.713 30.707 30.703 0 7.761-2.863 14.833-7.594 20.229l-9.082-9.088-4.506 2.063v1.943l13.459 13.463c8.369-6.739 13.738-17.057 13.738-28.609 0-20.246-16.478-36.72-36.722-36.72z"
+                            fill="#ff2a2a" fill-rule="evenodd" data-original="#ff2a2a" class=""></path>
+                        <g xmlns="http://www.w3.org/2000/svg" fill="#1a1a1a" class="wiwi">
+                            <path
+                                d="m45.018 30.004c-8.317-.004-16.235 2.59-21.757 7.527-3.938 3.375 1.281 9.219 5.078 5.683 3.741-3.345 9.997-5.589 16.672-5.584 6.678.005 12.916 2.256 16.65 5.604 3.777 3.396 8.871-2.271 5.094-5.667-5.509-4.948-13.421-7.557-21.737-7.563z"
+                                fill="#1a1a1a" data-original="#1a1a1a" class=""></path>
+                            <path
+                                d="m45.002 41.083c-4.713-.005-9.432 1.36-13.463 4.084-4.366 2.817.031 9.323 4.271 6.312 5.373-3.641 13.004-3.636 18.373.017 4.203 2.854 8.49-3.453 4.281-6.308-4.025-2.735-8.743-4.105-13.462-4.105z"
+                                fill="#1a1a1a" data-original="#1a1a1a" class=""></path>
+                            <path
+                                d="m45.381 52.745c-3.025 0-5.482 2.48-5.482 5.532s2.457 5.53 5.482 5.53c1.453 0 2.855-.583 3.881-1.62 1.025-1.037 1.604-2.443 1.604-3.911 0-1.464-.578-2.871-1.604-3.912-1.026-1.035-2.428-1.619-3.881-1.619z"
+                                fill="#1a1a1a" data-original="#1a1a1a" class=""></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <p>no internet</p>
+        </div>
+    </section>
+</body>
+<!-- <script src="./js/jquery.js"></script> -->
+<script src="./js/main.js"></script>
+<!-- no natwark -->
+<script>
+    window.addEventListener('online', updateStatus);
+    window.addEventListener('offline', updateStatus);
+
+    function updateStatus() {
+        var status = document.getElementById('status');
+        if (navigator.onLine) {
+            status.style.display = 'none';
+        } else {
+            status.style.display = 'flex';
+        }
+    };
+
+    updateStatus();
+</script>
+<!-- ############ -->
+<script>
+    function openclos() {
+        document.querySelector('.center-abi').classList.toggle('closeer');
+    }
+</script>
+<script>
+    (function App() {
+        let isDark = false;
+        if (localStorage.getItem("dark-mode")) {
+            isDark = true;
+            setDarkTheme();
+        }
+        const themeToggle = document.querySelector(".theme-toggle");
+        themeToggle.addEventListener("click", () => {
+            if (isDark) {
+                setLightTheme();
+                isDark = false;
+                ManageLocalStorage("DELETE");
+                return;
+            }
+            setDarkTheme();
+            ManageLocalStorage("ADD");
+            isDark = true;
+        });
+
+        function setLightTheme() {
+            document.body.classList.remove("dark");
+        }
+        function setDarkTheme() {
+            document.body.classList.add("dark");
+        }
+
+        function ManageLocalStorage(command) {
+            if (command === "DELETE") {
+                localStorage.removeItem("dark-mode");
+                return;
+            }
+            localStorage.setItem("dark-mode", true);
+        }
+    })();
+</script>
+
+</html>
