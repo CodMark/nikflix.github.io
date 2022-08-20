@@ -991,6 +991,45 @@ a {
   fill: var(--text);
 }
 
+.chat-arae {
+  width: 100%;
+  height: 100%;
+}
+.chat-arae .text-eafnr {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chat-arae .text-eafnr img {
+  width: 100px;
+  border-radius: 9px;
+  margin-top: 43px;
+}
+.chat-arae .text-eafnr h2 {
+  padding: 0px 21px 0px 21px;
+  margin-top: 14px;
+  font-size: 21px;
+  text-align: center;
+}
+.chat-arae .arrow {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 4px;
+  right: 9rem;
+}
+.chat-arae .arrow svg {
+  transform: rotate(86deg);
+  width: 199px;
+  height: 199px;
+}
+.chat-arae .arrow svg path {
+  fill: var(--text);
+}
+
 @-webkit-keyframes animations {
   0% {
     transform: scale(0.9);
@@ -1034,5 +1073,8 @@ a {
 @media (max-width: 608px) {
   .cantentrr-screenshot img {
     width: 23rem !important;
+  }
+  .chat-arae .arrow svg {
+    width: 99px !important;
   }
 }/*# sourceMappingURL=style.css.map */
