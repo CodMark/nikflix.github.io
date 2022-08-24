@@ -572,9 +572,13 @@ a {
   position: relative;
   top: -18px;
   text-align: center;
+  letter-spacing: 1px;
 }
 .download-area-movie .cantentrr h5 b {
   color: #f40062;
+}
+.download-area-movie .cantentrr h5 .addd {
+  color: #00ff28;
 }
 .download-area-movie .cantentrr .quicksty {
   position: relative;
