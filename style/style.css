@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans%3A300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: 0.4s;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 html {
@@ -11,6 +13,11 @@ html {
 
 b {
   color: #f40062;
+}
+
+p {
+  position: relative;
+  bottom: -1px;
 }
 
 body {
@@ -296,10 +303,10 @@ a {
 }
 .top-navbar .searchbtn div:nth-child(2) {
   width: 3.8px;
-  height: 12px;
+  height: 9px;
   background: var(--text);
   border-radius: 22px;
-  transform: rotate(-36deg);
+  transform: rotate(-40deg);
   position: absolute;
   left: 17px;
   top: 15px;
@@ -441,6 +448,7 @@ a {
 .file-upload-top .top-recent-btn p {
   position: relative;
   padding-left: 9px;
+  font-size: 19px;
 }
 .file-upload-top .top-recent-btn p::before {
   content: "";
@@ -449,6 +457,7 @@ a {
   background: #f40062;
   position: absolute;
   left: 0;
+  top: -1px;
   border-radius: 22px;
 }
 .file-upload-top .top-recent-btn a {
@@ -883,7 +892,7 @@ a {
 }
 .search-area .searchinput .searchbtn div:nth-child(2) {
   width: 3.8px;
-  height: 11px;
+  height: 9px;
   background: var(--text);
   border-radius: 22px;
   transform: rotate(-44deg);
