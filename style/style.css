@@ -737,7 +737,7 @@ a {
 .download-season1-area-480p .area-do .top-detal,
 .download-season1-area-720p .area-do .top-detal {
   width: 100%;
-  height: 2rem;
+  height: auto;
   display: flex;
   justify-content: space-between;
   padding-left: 3px;
