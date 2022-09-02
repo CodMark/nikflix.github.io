@@ -497,6 +497,7 @@ a {
   border-radius: 9px;
   margin: 6px;
   position: relative;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1098039216);
 }
 .file-upload-top .movie-file-upload .scroll-itme .cantent-movie a img {
   width: 100%;
