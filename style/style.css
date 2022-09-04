@@ -36,7 +36,7 @@ body {
   --ovewcolor: #ffffff;
   --cantsel: #eaeaea;
   --cobump: rgba(200, 200, 200, 0.67);
-  --searchback: #27272733;
+  --searchback: #2727271c;
   --searchcolor: #000;
   --btnnav: #fff;
 }
@@ -667,6 +667,8 @@ a {
   overflow: hidden;
   margin: 6px;
   position: relative;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1098039216);
+  border-radius: 9px;
 }
 .Recent-file-page-area .movie-area-downloadimg .movie-img a img {
   width: 100%;
