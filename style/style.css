@@ -569,12 +569,16 @@ a {
   left: 0;
   right: 0;
 }
-.download-area-movie .cantentrr .thimble-movie .online-player img {
+.download-area-movie .cantentrr .thimble-movie .online-player a {
   width: 67px;
   height: 67px;
   -webkit-animation: animations 2s infinite;
           animation: animations 2s infinite;
   border-radius: 50%;
+  background: url("../img/play.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .download-area-movie .cantentrr .thimble-movie .reting {
   position: absolute;
