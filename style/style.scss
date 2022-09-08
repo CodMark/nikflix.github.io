@@ -598,6 +598,25 @@ a {
                 height: 100%;
                 object-fit: cover;
             }
+            .online-player {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                img{
+                    width: 67px;
+                    height: 67px;
+                    animation: animations 2s infinite;
+                    border-radius: 50%;
+                }
+            }
 
             .reting {
                 position: absolute;
@@ -991,6 +1010,7 @@ a {
     }
 }
 
+
 .page-numbers {
     width: 100%;
     height: auto;
@@ -1069,6 +1089,13 @@ a {
         position: absolute;
         bottom: 4px;
         right: 9rem;
+
+        h2 {
+            transform: rotate(348deg);
+            position: absolute;
+            top: -13px;
+            left: -45px;
+        }
 
         svg {
             transform: rotate(86deg);
@@ -1173,6 +1200,12 @@ a {
 
     .chat-arae {
         .arrow {
+            right: 6rem !important;
+
+            h2 {
+                top: 30px !important;
+            }
+
             svg {
                 width: 99px !important;
             }

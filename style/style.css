@@ -556,6 +556,26 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.download-area-movie .cantentrr .thimble-movie .online-player {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.download-area-movie .cantentrr .thimble-movie .online-player img {
+  width: 67px;
+  height: 67px;
+  -webkit-animation: animations 2s infinite;
+          animation: animations 2s infinite;
+  border-radius: 50%;
+}
 .download-area-movie .cantentrr .thimble-movie .reting {
   position: absolute;
   bottom: 2px;
@@ -1043,6 +1063,12 @@ a {
   bottom: 4px;
   right: 9rem;
 }
+.chat-arae .arrow h2 {
+  transform: rotate(348deg);
+  position: absolute;
+  top: -13px;
+  left: -45px;
+}
 .chat-arae .arrow svg {
   transform: rotate(86deg);
   width: 199px;
@@ -1123,6 +1149,12 @@ a {
 @media (max-width: 608px) {
   .cantentrr-screenshot img {
     width: 23rem !important;
+  }
+  .chat-arae .arrow {
+    right: 6rem !important;
+  }
+  .chat-arae .arrow h2 {
+    top: 30px !important;
   }
   .chat-arae .arrow svg {
     width: 99px !important;
