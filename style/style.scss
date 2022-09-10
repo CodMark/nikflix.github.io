@@ -85,6 +85,22 @@ body {
     }
 }
 
+#movetoo{
+    width: 30px;
+    height: 30px;
+    background: #f40062 url(../img/angle-up-free-icon-font.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    position: fixed;
+    // bottom: 6px;
+    bottom: -46px;
+    right: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px var(--cobump);
+    cursor: pointer;
+}
+
 .center-abi.closeer {
     display: flex !important;
 }
